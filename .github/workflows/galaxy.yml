@@ -33,7 +33,7 @@ jobs:
 
       - name: Lint code.
         run: |
-          yamllint .
+          yamllint -d relaxed .
   molecule:
     name: Molecule
     runs-on: ubuntu-latest
@@ -63,4 +63,3 @@ jobs:
           PY_COLORS: '1'
           ANSIBLE_FORCE_COLOR: '1'
           MOLECULE_DISTRO: ${{ matrix.distro }}
-          
