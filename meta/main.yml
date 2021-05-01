@@ -1,3 +1,6 @@
+---
+dependencies: []
+
 galaxy_info:
   role_name: repo_epel
   author: Michael Buluma
