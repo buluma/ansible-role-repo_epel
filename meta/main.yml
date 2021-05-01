@@ -2,7 +2,7 @@
 dependencies: []
 
 galaxy_info:
-  role_name: repo-epel
+  role_name: repo_epel
   author: buluma
   description: EPEL repository for RHEL/CentOS.
   company: "Midwestern Mac, LLC"
