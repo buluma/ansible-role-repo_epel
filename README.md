@@ -1,5 +1,6 @@
-Role Name
+Repo Epel
 =========
+[![Build Status](https://travis-ci.com/buluma/repo-epel.svg?branch=main)](https://travis-ci.com/buluma/repo-epel)
 
 A brief description of the role goes here.
 
@@ -25,7 +26,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - { role: username.rolename, x: 42 }
+         - { role: buluma.repo_epel, x: 42 }
 
 License
 -------
