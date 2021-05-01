@@ -5,6 +5,16 @@ rules:
   line-length:
     max: 240
     level: warning
+  new-line-at-end-of-file: disable
+  new-lines: disable
+  octal-values: disable
+  quoted-strings: disable
+  trailing-spaces: disable
+  comments-indentation: disable  # don't bother me with this rule
+  indentation:
+    indent-sequences: whatever
+  truthy:
+    level: warning
 
 ignore: |
   .github/stale.yml
