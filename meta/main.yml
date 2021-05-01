@@ -1,7 +1,7 @@
 galaxy_info:
   role_name: repo_epel
   author: Michael Buluma
-  description: repo-epel role
+  description: Installs the EPEL repository (Extra Packages for Enterprise Linux) for RHEL/CentOS.
   company: ShadowNet
   license: "license (BSD, MIT)"
   min_ansible_version: 2.5
