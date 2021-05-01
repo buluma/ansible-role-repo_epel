@@ -6,11 +6,11 @@ rules:
     max: 240
     level: warning
   new-line-at-end-of-file: enable
-  new-lines: disable
-  octal-values: disable
-  quoted-strings: disable
-  trailing-spaces: disable
-  comments-indentation: disable  # don't bother me with this rule
+  new-lines: enable
+  octal-values: enable
+  quoted-strings: enable
+  trailing-spaces: enable
+  comments-indentation: enable  # don't bother me with this rule
   indentation:
     indent-sequences: whatever
   truthy:
