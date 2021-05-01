@@ -28,12 +28,12 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install test dependencies.
-        run: pip3 install yamllint
+#      - name: Install test dependencies.
+#        run: pip3 install yamllint
 
-      - name: Lint code.
-        run: |
-          yamllint -d relaxed .
+#      - name: Lint code.
+#        run: |
+#          yamllint .
   molecule:
     name: Molecule
     runs-on: ubuntu-latest
