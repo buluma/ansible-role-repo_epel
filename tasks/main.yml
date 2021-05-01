@@ -33,4 +33,3 @@
     value: 0
     mode: 0644
   when: epel_repo_disable
-  

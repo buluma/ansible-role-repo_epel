@@ -2,10 +2,10 @@
 dependencies: []
 
 galaxy_info:
-  role_name: repo_epel
-  author: Michael Buluma
-  description: Installs the EPEL repository (Extra Packages for Enterprise Linux) for RHEL/CentOS.
-  company: ShadowNet
+  role_name: repo-epel
+  author: buluma
+  description: EPEL repository for RHEL/CentOS.
+  company: "Midwestern Mac, LLC"
   license: "license (BSD, MIT)"
   min_ansible_version: 2.5
   platforms:
@@ -21,4 +21,3 @@ galaxy_info:
     - redhat
     - centos
     - rhel
-    
