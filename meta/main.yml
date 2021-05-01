@@ -1,6 +1,6 @@
 galaxy_info:
-  role_name: repo-epel
-  author: repo-epel
+  role_name: repo_epel
+  author: Michael Buluma
   description: repo-epel role
   company: ShadowNet
   license: "license (BSD, MIT)"
