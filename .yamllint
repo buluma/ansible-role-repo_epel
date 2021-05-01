@@ -5,7 +5,7 @@ rules:
   line-length:
     max: 240
     level: warning
-  new-line-at-end-of-file: disable
+  new-line-at-end-of-file: enable
   new-lines: disable
   octal-values: disable
   quoted-strings: disable
