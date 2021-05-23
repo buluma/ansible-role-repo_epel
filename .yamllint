@@ -9,7 +9,7 @@ rules:
   new-lines: enable
   octal-values: disable
   quoted-strings: disable
-  trailing-spaces: enable
+  trailing-spaces: disable
   comments-indentation: enable  # don't bother me with this rule
   indentation:
     indent-sequences: whatever
