@@ -4,4 +4,4 @@
   become: true
 
   roles:
-    - role: buluma.repo-epel
+    - role: buluma.repo_epel
