@@ -1,0 +1,8 @@
+---
+#
+# Ansible managed
+#
+repository:
+  description: EPEL repository for RHEL/CentOS.
+  homepage: https://buluma.github.io/
+  topics: packaging, epel, repository, repo, redhat, centos, rhel, ansible, molecule, tox, playbook, hacktoberfest

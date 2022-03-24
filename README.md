@@ -1,40 +1,71 @@
-# Ansible Role: EPEL Repository
+# [repo_epel](#repo_epel)
 
-[![CI](https://github.com/buluma/ansible-role-repo-epel/workflows/CI/badge.svg?event=push)](https://github.com/buluma/ansible-role-repo-epel/actions?query=workflow%3ACI) [![Release](https://github.com/buluma/repo_epel/actions/workflows/release.yml/badge.svg)](https://github.com/buluma/repo_epel/actions/workflows/release.yml) [![Build Status](https://travis-ci.com/buluma/repo-epel.svg?branch=main)](https://travis-ci.com/buluma/repo-epel) ![Ansible Role](https://img.shields.io/ansible/role/d/54588?color=blue)
+EPEL repository for RHEL/CentOS.
 
-Installs the [EPEL repository](https://fedoraproject.org/wiki/EPEL) (Extra Packages for Enterprise Linux) for RHEL/CentOS.
+|GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
+|------|------|-------|---------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-repo_epel/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-repo_epel/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-repo_epel/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-repo_epel)|[![quality](https://img.shields.io/ansible/quality/54588)](https://galaxy.ansible.com/buluma/repo_epel)|[![downloads](https://img.shields.io/ansible/role/d/54588)](https://galaxy.ansible.com/buluma/repo_epel)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-repo_epel.svg)](https://github.com/buluma/ansible-role-repo_epel/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-repo_epel.svg)](https://github.com/buluma/ansible-role-repo_epel/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-repo_epel.svg)](https://github.com/buluma/ansible-role-repo_epel/pulls/)|
 
-## Requirements
+## [Example Playbook](#example-playbook)
 
-This role only is needed/runs on RHEL and its derivatives.
+This example is taken from `molecule/default/converge.yml` and is tested on each push, pull request and release.
+```yaml
+---
+- name: Converge
+  hosts: all
+  become: true
 
-## Role Variables
+  roles:
+    - role: buluma.repo_epel
+```
 
-Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-    epel_repo_url: "http://download.fedoraproject.org/pub/epel/{{ ansible_distribution_major_version }}/{{ ansible_userspace_architecture }}{{ '/' if ansible_distribution_major_version < '7' else '/e/' }}epel-release-{{ ansible_distribution_major_version }}-{{ epel_release[ansible_distribution_major_version] }}.noarch.rpm"
-    epel_repo_gpg_key_url: "/etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-{{ ansible_distribution_major_version }}"
+## [Role Variables](#role-variables)
 
-The EPEL repo URL and GPG key URL. Generally, these should not be changed, but if this role is out of date, or if you need a very specific version, these can both be overridden.
+The default values for the variables are set in `defaults/main.yml`:
+```yaml
+---
+epel_repo_url: "https://dl.fedoraproject.org/pub/epel/epel-release-latest-{{ ansible_distribution_major_version }}.noarch.rpm"
+epel_repo_gpg_key_url: "https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-{{ ansible_distribution_major_version }}"
+epel_repofile_path: "/etc/yum.repos.d/epel.repo"
+epel_repo_disable: false
+```
 
-    epel_repo_disable: false
+## [Requirements](#requirements)
 
-Set to `true` to disable the EPEL repo (even if already installed).
+- pip packages listed in [requirements.txt](https://github.com/buluma/ansible-role-repo_epel/blob/main/requirements.txt).
 
-## Dependencies
 
-None.
+## [Context](#context)
 
-## Example Playbook
+This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://buluma.co.ke/) for further information.
 
-    - hosts: servers
-      roles:
-        - buluma.repo-epel
+Here is an overview of related roles:
 
-## License
+![dependencies](https://raw.githubusercontent.com/buluma/ansible-role-repo_epel/png/requirements.png "Dependencies")
 
-MIT / BSD
+## [Compatibility](#compatibility)
 
-## Author Information
+This role has been tested on these [container images](https://hub.docker.com/u/buluma):
 
-This role was created in 2021 by [Michael Buluma](https://www.github.com/buluma).
+|container|tags|
+|---------|----|
+|el|7, 8|
+
+The minimum version of Ansible required is 2.5, tests have been done to:
+
+- The previous version.
+- The current version.
+- The development version.
+
+
+
+If you find issues, please register them in [GitHub](https://github.com/buluma/ansible-role-repo_epel/issues)
+
+## [License](#license)
+
+license (BSD, MIT)
+
+## [Author Information](#author-information)
+
+[buluma](https://buluma.github.io/)
