@@ -5,3 +5,4 @@
 
   roles:
     - role: buluma.repo_epel
+    - role: buluma.bootstrap
