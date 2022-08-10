@@ -9,8 +9,13 @@ variables:
   PY_COLORS: 1
 
 molecule:
+  stage: build
+  allow_failure: true
   script:
-    - image=${image} tag=${tag} molecule test
+    - if [ -f tox.ini ] ; then tox ; fi
+    - if [ ! -f tox.ini ] ; then molecule test ; fi
+  rules:
+    - if: $CI_COMMIT_REF_NAME == "master"
   retry: 1
   parallel:
     matrix:
@@ -20,8 +25,11 @@ molecule:
         tag: "8"
 
 testing:
+  stage: test
+  needs: []
   script:
-    - image=${image} tag=${tag} molecule test
+    - if [ -f tox.ini ] ; then tox ; fi
+    - if [ ! -f tox.ini ] ; then molecule test ; fi
   rules:
     - if: $CI_COMMIT_REF_NAME == "testing"
   retry: 1
@@ -31,20 +39,3 @@ testing:
         tag: "7"
       - image: "enterpriselinux"
         tag: "8"
-      - image: "enterpriselinux"
-        tag: "latest"
-
-galaxy:
-  script:
-    - ansible-galaxy role info buluma.repo_epel
-
-role_testing:
-  script:
-    - image=${image} tag=${tag} ansible-galaxy install buluma.repo_epel
-  retry: 1
-  parallel:
-    matrix:
-      - image: "enterpriselinux"
-        tag: "7"
-      - image: "enterpriselinux"
-        tag: "latest"
