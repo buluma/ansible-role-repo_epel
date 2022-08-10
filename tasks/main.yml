@@ -1,3 +1,4 @@
+---
 - name: Check if EPEL repo is already configured.
   stat:
     path: "{{ epel_repofile_path }}"
