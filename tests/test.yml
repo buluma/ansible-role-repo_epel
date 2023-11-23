@@ -2,4 +2,4 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - repo_epel
+    - ansibel-role-repo_epel
