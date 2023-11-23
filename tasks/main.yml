@@ -25,7 +25,7 @@
   delay: 10
   when: not epel_repofile_result.stat.exists
 
-- name: Disable main EPEL repo.
+- name: Disable Main EPEL repo.
   ini_file:
     path: "/etc/yum.repos.d/epel.repo"
     section: epel
