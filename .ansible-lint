@@ -7,6 +7,7 @@ exclude_paths:
   - molecule/default/prepare.yml
   - molecule/default/converge.yml
   - molecule/default/collections.yml
+  - tests
   - .tox
   - .cache
   - .github
