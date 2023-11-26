@@ -9,6 +9,10 @@
 - Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#11](https://github.com/buluma/ansible-role-repo_epel/issues/11)
 - Update action [\#10](https://github.com/buluma/ansible-role-repo_epel/issues/10)
 
+**Merged pull requests:**
+
+- Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.5 to 1.0.8 [\#16](https://github.com/buluma/ansible-role-repo_epel/pull/16) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [2.1.5](https://github.com/buluma/ansible-role-repo_epel/tree/2.1.5) (2022-08-10)
 
 [Full Changelog](https://github.com/buluma/ansible-role-repo_epel/compare/2.1.4...2.1.5)
