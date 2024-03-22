@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Bump release-drafter/release-drafter from 5 to 6 [\#26](https://github.com/buluma/ansible-role-repo_epel/pull/26) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump release-drafter/release-drafter from 5 to 6 [\#24](https://github.com/buluma/ansible-role-repo_epel/pull/24) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump release-drafter/release-drafter from 5 to 6 [\#23](https://github.com/buluma/ansible-role-repo_epel/pull/23) ([dependabot[bot]](https://github.com/apps/dependabot))
 
