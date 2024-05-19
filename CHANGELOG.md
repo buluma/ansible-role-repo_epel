@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-repo_epel/tree/HEAD)
+## [24.3.31](https://github.com/buluma/ansible-role-repo_epel/tree/24.3.31) (2024-03-26)
 
-[Full Changelog](https://github.com/buluma/ansible-role-repo_epel/compare/2.3.0...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-repo_epel/compare/2.3.0...24.3.31)
 
 **Merged pull requests:**
 
@@ -69,19 +69,7 @@
 
 ## [1.0.3](https://github.com/buluma/ansible-role-repo_epel/tree/1.0.3) (2021-05-23)
 
-[Full Changelog](https://github.com/buluma/ansible-role-repo_epel/compare/v2.1...1.0.3)
-
-## [v2.1](https://github.com/buluma/ansible-role-repo_epel/tree/v2.1) (2021-05-01)
-
-[Full Changelog](https://github.com/buluma/ansible-role-repo_epel/compare/v2.0...v2.1)
-
-## [v2.0](https://github.com/buluma/ansible-role-repo_epel/tree/v2.0) (2021-05-01)
-
-[Full Changelog](https://github.com/buluma/ansible-role-repo_epel/compare/v1.1...v2.0)
-
-## [v1.1](https://github.com/buluma/ansible-role-repo_epel/tree/v1.1) (2021-05-01)
-
-[Full Changelog](https://github.com/buluma/ansible-role-repo_epel/compare/1.0...v1.1)
+[Full Changelog](https://github.com/buluma/ansible-role-repo_epel/compare/1.0...1.0.3)
 
 ## [1.0](https://github.com/buluma/ansible-role-repo_epel/tree/1.0) (2021-05-01)
 
