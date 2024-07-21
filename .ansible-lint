@@ -7,6 +7,7 @@ exclude_paths:
   - molecule/default/prepare.yml
   - molecule/default/converge.yml
   - molecule/default/collections.yml
+  - tests/test.yml
   - .tox
   - .cache
   - .github
@@ -17,4 +18,4 @@ enable_list:
 
 skip_list:
   - fqcn[action-core]
-  - syntax-check[specific]
+  # - syntax-check[specific]
