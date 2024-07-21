@@ -32,4 +32,4 @@
     option: enabled
     value: "{{ epel_repo_disable | ternary(0, 1) }}"
     no_extra_spaces: true
-    mode: 0644
+    mode: '0644'
