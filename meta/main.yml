@@ -1,3 +1,4 @@
+---
 galaxy_info:
   role_name: repo_epel
   author: buluma
@@ -6,11 +7,11 @@ galaxy_info:
   license: Apache-2.0
   min_ansible_version: '2.12'
   platforms:
-  - name: EL
-    versions:
-    - all
+    - name: EL
+      versions:
+        - all
   galaxy_tags:
-  - packaging
+    - packaging
   - epel
   - repository
   - repo
