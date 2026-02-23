@@ -12,13 +12,13 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 
 ```yaml
 ---
-  - name: Converge
-    hosts: all
-    become: true
+- name: Converge
+  hosts: all
+  become: true
 
-    roles:
-      - role: buluma.repo_epel
-      - role: buluma.bootstrap
+  roles:
+  - role: buluma.repo_epel
+  - role: buluma.bootstrap
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
