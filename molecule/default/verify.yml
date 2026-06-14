@@ -1,0 +1,17 @@
+---
+- name: Verify
+  hosts: all
+  become: true
+  gather_facts: false
+
+  tasks:
+    - name: Check EPEL repo file exists
+      ansible.builtin.stat:
+        path: /etc/yum.repos.d/epel.repo
+      register: epel_repo
+
+    - name: Assert EPEL repo is configured
+      ansible.builtin.assert:
+        that:
+          - epel_repo.stat.exists
+        quiet: true
