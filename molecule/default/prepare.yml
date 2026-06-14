@@ -1,0 +1,14 @@
+---
+- name: Prepare
+  hosts: all
+  become: false
+  gather_facts: false
+  tasks:
+    - name: Install sudo
+      ansible.builtin.raw: |
+        if command -v dnf 2>/dev/null; then
+          dnf install -y sudo
+        elif command -v apt-get 2>/dev/null; then
+          apt-get install -y sudo
+        fi
+      changed_when: true
