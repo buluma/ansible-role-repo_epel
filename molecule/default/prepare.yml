@@ -1,14 +1,15 @@
 ---
 - name: Prepare
   hosts: all
-  become: false
+  become: true
   gather_facts: false
-  tasks:
-    - name: Install sudo
-      ansible.builtin.raw: |
-        if command -v dnf 2>/dev/null; then
-          dnf install -y sudo
-        elif command -v apt-get 2>/dev/null; then
-          apt-get install -y sudo
-        fi
-      changed_when: true
+
+  pre_tasks:
+    - name: Install sudo if missing
+      ansible.builtin.raw: "{{ ansible_pkg_mgr | default('dnf') }} install -y sudo"
+      become: false
+      changed_when: false
+      failed_when: false
+
+  roles:
+    - role: buluma.bootstrap
