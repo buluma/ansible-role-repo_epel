@@ -3,6 +3,7 @@
   ansible.builtin.stat:
     path: "{{ epel_repofile_path }}"
   register: epel_repofile_result
+  when: ansible_facts['os_family'] == "RedHat"
 
 - name: Import EPEL GPG key.
   ansible.builtin.rpm_key:
@@ -12,7 +13,9 @@
   until: result is succeeded
   retries: 5
   delay: 10
-  when: not epel_repofile_result.stat.exists
+  when:
+    - ansible_facts['os_family'] == "RedHat"
+    - not epel_repofile_result.stat.exists
   ignore_errors: "{{ ansible_check_mode }}"
 
 - name: Install EPEL repo.
@@ -23,7 +26,9 @@
   until: result is succeeded
   retries: 5
   delay: 10
-  when: not epel_repofile_result.stat.exists
+  when:
+    - ansible_facts['os_family'] == "RedHat"
+    - not epel_repofile_result.stat.exists
 
 - name: Disable Main EPEL repo.
   community.general.ini_file:
@@ -33,3 +38,4 @@
     value: "{{ epel_repo_disable | ternary(0, 1) }}"
     no_extra_spaces: true
     mode: "0644"
+  when: ansible_facts['os_family'] == "RedHat"
