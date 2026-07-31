@@ -1,5 +1,13 @@
 # Changelog
 
+## [26.8.0](https://github.com/buluma/ansible-role-repo_epel/tree/26.8.0) (2026-07-21)
+
+[Full Changelog](https://github.com/buluma/ansible-role-repo_epel/compare/26.7.1...26.8.0)
+
+## [26.7.1](https://github.com/buluma/ansible-role-repo_epel/tree/26.7.1) (2026-07-21)
+
+[Full Changelog](https://github.com/buluma/ansible-role-repo_epel/compare/26.7.0...26.7.1)
+
 ## [26.7.0](https://github.com/buluma/ansible-role-repo_epel/tree/26.7.0) (2026-07-21)
 
 [Full Changelog](https://github.com/buluma/ansible-role-repo_epel/compare/26.6.0...26.7.0)
