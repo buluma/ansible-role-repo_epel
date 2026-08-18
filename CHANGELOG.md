@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-repo_epel/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-repo_epel/compare/26.8.0...HEAD)
+
+**Merged pull requests:**
+
+- Bump ansible/ansible-lint from 26.6.0 to 26.8.0 [\#36](https://github.com/buluma/ansible-role-repo_epel/pull/36) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [26.8.0](https://github.com/buluma/ansible-role-repo_epel/tree/26.8.0) (2026-07-21)
 
 [Full Changelog](https://github.com/buluma/ansible-role-repo_epel/compare/26.7.1...26.8.0)
